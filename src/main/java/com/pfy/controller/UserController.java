@@ -1,6 +1,7 @@
 package com.pfy.controller;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,14 +18,15 @@ public class UserController {
 	{
 	
 		UserDetails userDetails=new UserDetails();
-		ArrayList<Roles> listRoles=new ArrayList<Roles>();
+		List<Roles> listRoles=new ArrayList<Roles>();
 		Roles roles=new Roles();
+		Roles roles1=new Roles();
 		roles.setId("1");
 		roles.setRoleName("Admin");
 		listRoles.add(roles);
-		roles.setId("2");
-		roles.setRoleName("Manager");
-		listRoles.add(roles);
+		roles1.setId("2");
+		roles1.setRoleName("Manager");
+		listRoles.add(roles1);
 		userDetails.setId(id);
 		userDetails.setFirstName("Emma");
 		userDetails.setLastName("Peter");
