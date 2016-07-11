@@ -2,16 +2,10 @@ package com.pfy.domain.entity;
 
 public class Performance {
 
-	private String id;
 	private String duration;
 	private Integer actual;
 	private Integer total;
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
+	
 	public String getDuration() {
 		return duration;
 	}

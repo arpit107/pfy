@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.pfy.domain.entity.Roles;
+import com.pfy.domain.entity.Role;
 import com.pfy.domain.entity.UserDetails;
 
 @RestController
@@ -18,9 +18,9 @@ public class UserController {
 	{
 	
 		UserDetails userDetails=new UserDetails();
-		List<Roles> listRoles=new ArrayList<Roles>();
-		Roles roles=new Roles();
-		Roles roles1=new Roles();
+		List<Role> listRoles=new ArrayList<Role>();
+		Role roles=new Role();
+		Role roles1=new Role();
 		roles.setId("1");
 		roles.setRoleName("Admin");
 		listRoles.add(roles);

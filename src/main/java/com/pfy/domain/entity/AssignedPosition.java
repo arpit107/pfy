@@ -2,7 +2,6 @@ package com.pfy.domain.entity;
 
 public class AssignedPosition {
 
-	private String id;
 	private String positionName;
 	private String company;
 	private String jobLocation;
@@ -11,12 +10,7 @@ public class AssignedPosition {
 	private Integer screened;
 	private Integer shortlisted;
 	private Integer selected;
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
+
 	public String getPositionName() {
 		return positionName;
 	}

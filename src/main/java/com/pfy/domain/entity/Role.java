@@ -1,6 +1,6 @@
 package com.pfy.domain.entity;
 
-public class Roles {
+public class Role {
 
 	private String id;
 	private String roleName;

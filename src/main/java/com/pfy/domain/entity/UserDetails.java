@@ -7,7 +7,7 @@ public class UserDetails {
 	private String id;
 	private String firstName;
 	private String lastName;
-	private List<Roles> roles;
+	private List<Role> roles;
 	private String imageURL;
 	public String getId() {
 		return id;
@@ -27,10 +27,10 @@ public class UserDetails {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public List<Roles> getRoles() {
+	public List<Role> getRoles() {
 		return roles;
 	}
-	public void setRoles(List<Roles> roles) {
+	public void setRoles(List<Role> roles) {
 		this.roles = roles;
 	}
 	public String getImageURL() {

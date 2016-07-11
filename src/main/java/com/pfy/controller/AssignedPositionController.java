@@ -19,7 +19,6 @@ public class AssignedPositionController {
 		AssignedPosition assignedPosition1=new AssignedPosition();
 		List<AssignedPosition> listPositions=new ArrayList<AssignedPosition>();
 				
-		assignedPosition.setId(id);
 		assignedPosition.setCompany("Google");
 		assignedPosition.setJobLocation("Pune");
 		assignedPosition.setOpen(10);
@@ -29,7 +28,6 @@ public class AssignedPositionController {
 		assignedPosition.setShortlisted(12);
 		assignedPosition.setSPOC("Ajay Kumar");
 		
-		assignedPosition1.setId(id);
 		assignedPosition1.setCompany("Yahoo");
 		assignedPosition1.setJobLocation("Pune");
 		assignedPosition1.setOpen(10);
