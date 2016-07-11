@@ -7,7 +7,7 @@ public class Interview {
 	private String id;
 	private Long date;
 	private String company;
-	private List<Candidate> candidates;
+	private Candidate candidates;
 	public String getId() {
 		return id;
 	}
@@ -26,12 +26,13 @@ public class Interview {
 	public void setCompany(String company) {
 		this.company = company;
 	}
-	public List<Candidate> getCandidates() {
+	public Candidate getCandidates() {
 		return candidates;
 	}
-	public void setCandidates(List<Candidate> candidates) {
+	public void setCandidates(Candidate candidates) {
 		this.candidates = candidates;
 	}
+	
 	
 	
 

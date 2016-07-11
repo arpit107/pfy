@@ -16,7 +16,6 @@ public class InterviewController {
 	@RequestMapping(value="/users/{id}/interviews")
 	public List<Interview> listInterviews(@PathVariable String id)
 	{
-		List<Candidate> candidates=new ArrayList<Candidate>();
 		List<Interview> interviews=new ArrayList<Interview>();
 		Interview interview=new Interview();
 		Interview interview1=new Interview();
@@ -27,16 +26,15 @@ public class InterviewController {
 		candidate.setName("Ajay Singh");
 		candidate1.setId("2");
 		candidate1.setName("Shreya Bansal");
-		candidates.add(candidate);
-		candidates.add(candidate1);
+		
 		interview.setId("1");
 		interview.setCompany("Google");
-		interview.setCandidates(candidates);
+		interview.setCandidates(candidate);
 		interview.setDate(1468502702L);
 		
 		interview1.setId("2");
 		interview1.setCompany("Yahoo");
-		interview1.setCandidates(candidates);
+		interview1.setCandidates(candidate1);
 		interview1.setDate(1468416302L);
 		
 		interviews.add(interview);
