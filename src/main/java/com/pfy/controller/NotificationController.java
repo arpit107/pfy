@@ -47,31 +47,35 @@ public class NotificationController {
 		notification.setCompany("Google");
 		notification.setBody("interview scheduled with");
 		notification.setCandidate(candidate);
+		notification.setType("critical");
 		
 		notification1.setId("2");
 		notification1.setDate(1468761902L);
 		notification1.setCompany("Google");
 		notification1.setBody("interview scheduled with");
 		notification1.setCandidate(candidate2);
+		notification1.setType("critical");
 		
 		notification2.setId("3");
 		notification2.setDate(1468761902L);
 		notification2.setCompany("");
 		notification2.setBody("follow up scheduled");
 		notification2.setCandidate(candidate3);
+		notification2.setType("normal");
 		
 		notification3.setId("4");
 		notification3.setDate(1468761902L);
 		notification3.setCompany("Yahoo");
 		notification3.setBody("interview scheduled with");
 		notification3.setCandidate(candidate4);
-		
+		notification3.setType("normal");
 		
 		notification4.setId("5");
 		notification4.setDate(1468761902L);
 		notification4.setCompany("");
 		notification4.setBody("Follow Up scheduled");
 		notification4.setCandidate(candidate5);
+		notification4.setType("critical");
 		
 		notifications.add(notification);
 		notifications.add(notification1);
