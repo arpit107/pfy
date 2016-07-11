@@ -29,12 +29,12 @@ public class InterviewController {
 		
 		interview.setId("1");
 		interview.setCompany("Google");
-		interview.setCandidates(candidate);
+		interview.setCandidate(candidate);
 		interview.setDate(1468502702L);
 		
 		interview1.setId("2");
 		interview1.setCompany("Yahoo");
-		interview1.setCandidates(candidate1);
+		interview1.setCandidate(candidate1);
 		interview1.setDate(1468416302L);
 		
 		interviews.add(interview);
