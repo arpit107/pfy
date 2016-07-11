@@ -31,16 +31,16 @@ public class NotificationController {
 		candidate2.setName("Ajay Singh");
 		
 		Candidate candidate3=new Candidate();
-		candidate2.setId("3");
-		candidate2.setName("Prashant");
+		candidate3.setId("3");
+		candidate3.setName("Prashant");
 		
 		Candidate candidate4=new Candidate();
-		candidate2.setId("4");
-		candidate2.setName("Raj Kumar");
+		candidate4.setId("4");
+		candidate4.setName("Raj Kumar");
 		
 		Candidate candidate5=new Candidate();
-		candidate2.setId("5");
-		candidate2.setName("John Peter");
+		candidate5.setId("5");
+		candidate5.setName("John Peter");
 		
 		notification.setId("1");
 		notification.setDate(1468761902L);
