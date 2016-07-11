@@ -26,8 +26,8 @@ public class UserController {
 		roles.setRoleName("Manager");
 		listRoles.add(roles);
 		userDetails.setId(id);
-		userDetails.setFirstName("ABC");
-		userDetails.setLastName("PQR");
+		userDetails.setFirstName("Emma");
+		userDetails.setLastName("Peter");
 		userDetails.setImageURL("https://i.imgsafe.org/34a51bb14c.png");
 		userDetails.setRoles(listRoles);
 		return userDetails;
