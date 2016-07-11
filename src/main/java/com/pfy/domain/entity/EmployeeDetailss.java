@@ -1,4 +1,4 @@
-package com.peoplefy.domain.entity;
+package com.pfy.domain.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

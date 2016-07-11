@@ -1,4 +1,4 @@
-package com.peoplefy;
+package com.pfy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

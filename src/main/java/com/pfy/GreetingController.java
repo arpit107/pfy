@@ -1,4 +1,4 @@
-package com.peoplefy;
+package com.pfy;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,14 +8,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.peoplefy.domain.entity.EmployeeDetailss;
-import com.peoplefy.repository.EmployeeRepo;
+import com.pfy.repository.EmployeeRepo;
+import com.pfy.domain.entity.EmployeeDetailss;
+
 
 @RestController
 public class GreetingController {
 
+
 	@Autowired
 	EmployeeRepo repo;
+	
 	
     @RequestMapping("/greeting")
     public String greeting(@RequestParam("name") String name) {
