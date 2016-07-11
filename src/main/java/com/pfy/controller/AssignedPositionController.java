@@ -37,7 +37,7 @@ public class AssignedPositionController {
 		assignedPosition1.setScreened(20);
 		assignedPosition1.setSelected(5);
 		assignedPosition1.setShortlisted(12);
-		assignedPosition1.setSPOC("Ajay Kumar");
+		assignedPosition1.setSPOC("Shilpa Gupta");
 		
 		listPositions.add(assignedPosition);
 		listPositions.add(assignedPosition1);
