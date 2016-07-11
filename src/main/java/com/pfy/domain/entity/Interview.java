@@ -1,6 +1,5 @@
 package com.pfy.domain.entity;
 
-import java.util.List;
 
 public class Interview {
 

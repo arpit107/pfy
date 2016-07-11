@@ -8,7 +8,8 @@ public class Notification {
 	private String type;
 	private String body;
 	private Long date;
-	private List<Candidate> candidates;
+	private String company;
+	private Candidate candidate;
 	public String getId() {
 		return id;
 	}
@@ -33,11 +34,18 @@ public class Notification {
 	public void setDate(Long date) {
 		this.date = date;
 	}
-	public List<Candidate> getCandidates() {
-		return candidates;
+	public Candidate getCandidate() {
+		return candidate;
 	}
-	public void setCandidates(List<Candidate> candidates) {
-		this.candidates = candidates;
+	public void setCandidate(Candidate candidate) {
+		this.candidate = candidate;
 	}
+	public String getCompany() {
+		return company;
+	}
+	public void setCompany(String company) {
+		this.company = company;
+	}
+	
 	
 }

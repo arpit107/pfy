@@ -1,12 +1,11 @@
 package com.pfy.domain.entity;
 
-import java.util.List;
 
 public class FollowUp {
 
 	private String id;
 	private Long date;
-	private List<Candidate> candidates;
+	private Candidate candidate;
 	public String getId() {
 		return id;
 	}
@@ -19,11 +18,12 @@ public class FollowUp {
 	public void setDate(Long date) {
 		this.date = date;
 	}
-	public List<Candidate> getCandidates() {
-		return candidates;
+	public Candidate getCandidate() {
+		return candidate;
 	}
-	public void setCandidates(List<Candidate> candidates) {
-		this.candidates = candidates;
+	public void setCandidate(Candidate candidate) {
+		this.candidate = candidate;
 	}
+	
 	
 }
