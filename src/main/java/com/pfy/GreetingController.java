@@ -38,6 +38,7 @@ public class GreetingController {
     {
     	ArrayList<EmployeeDetailss> list=new ArrayList<EmployeeDetailss>();
     	EmployeeDetailss ed=new EmployeeDetailss();
+    	EmployeeDetailss ed1=new EmployeeDetailss();
     	Session session=sessionFactory.getCurrentSession();
     	Session session1=sessionFactory.getCurrentSession();
     	session.beginTransaction();
@@ -48,12 +49,12 @@ public class GreetingController {
     	session.save(ed);
     	//repo.save(ed);
     	
-    	ed.setEmail("employee2@gmail.com");
-    	ed.setName("Employee2");
-    	ed.setId(2);
-    	list.add(ed);
+    	ed1.setEmail("employee2@gmail.com");
+    	ed1.setName("Employee2");
+    	ed1.setId(2);
+    	list.add(ed1);
     	
-    	session1.save(ed);
+    	session1.save(ed1);
     	List<EmployeeDetailss> list2=session.createQuery("from EmployeeDetailss").list();
     	//repo.save(ed);
     	
