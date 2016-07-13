@@ -47,7 +47,7 @@ public class GreetingController {
     	list.add(ed);
     	session.save(ed);
     	//repo.save(ed);
-    	session1.beginTransaction();
+    	
     	ed.setEmail("employee2@gmail.com");
     	ed.setName("Employee2");
     	ed.setId(2);
