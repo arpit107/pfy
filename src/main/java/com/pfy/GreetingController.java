@@ -42,13 +42,13 @@ public class GreetingController {
     	session.beginTransaction();
     	ed.setEmail("employee1@gmail.com");
     	ed.setName("Employee1");
-    	ed.setId(1);
+    	//ed.setId(1);
     	list.add(ed);
     	session.save(ed);
     	//repo.save(ed);
     	ed.setEmail("employee2@gmail.com");
     	ed.setName("Employee2");
-    	ed.setId(2);
+    	//ed.setId(2);
     	list.add(ed);
     	session.save(ed);
     	session.save(ed);
