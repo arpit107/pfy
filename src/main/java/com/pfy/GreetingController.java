@@ -33,33 +33,26 @@ public class GreetingController {
     }
 
     @RequestMapping("/employees")
-    @Transactional
     public List<EmployeeDetailss> listEmployeea()
     {
     	ArrayList<EmployeeDetailss> list=new ArrayList<EmployeeDetailss>();
     	EmployeeDetailss ed=new EmployeeDetailss();
-    	EmployeeDetailss ed1=new EmployeeDetailss();
-    	Session session=sessionFactory.getCurrentSession();
-    	Session session1=sessionFactory.getCurrentSession();
-    	session.beginTransaction();
+    	
     	ed.setEmail("employee1@gmail.com");
     	ed.setName("Employee1");
     	ed.setId(1);
     	list.add(ed);
-    	session.save(ed);
-    	//repo.save(ed);
+    	repo.save(ed);
     	
-    	ed1.setEmail("employee2@gmail.com");
-    	ed1.setName("Employee2");
-    	ed1.setId(2);
-    	list.add(ed1);
+    	ed.setEmail("employee2@gmail.com");
+    	ed.setName("Employee2");
+    	ed.setId(2);
+    	list.add(ed);
     	
-    	session1.save(ed1);
-    	List<EmployeeDetailss> list2=session.createQuery("from EmployeeDetailss").list();
-    	//repo.save(ed);
+    	repo.save(ed);
     	
     	
     	
-    	return list2;
+    	return repo.findAll();
     }
 }
