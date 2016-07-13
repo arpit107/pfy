@@ -3,6 +3,8 @@ package com.pfy;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +33,7 @@ public class GreetingController {
     }
 
     @RequestMapping("/employees")
+    @Transactional
     public List<EmployeeDetailss> listEmployeea()
     {
     	ArrayList<EmployeeDetailss> list=new ArrayList<EmployeeDetailss>();
